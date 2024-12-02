@@ -24,11 +24,11 @@ jobs:
           submodules: true
           lfs: false
 
-      # Step 2: Set up Node.js (Using Node.js 20)
+      # Step 2: Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20' # Specify Node.js 20
+          node-version: '20' # Adjust based on your app requirements
 
       # Step 3: Install dependencies
       - name: Install Dependencies
@@ -45,21 +45,6 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
-          ###### Repository/Build Configurations ######
-          app_location: "/" # App source code path
-          api_location: "" # API source code path - optional
-          output_location: "build" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
-
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    name: Close Pull Request Job
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          action: "close"
+          app_location: "/" # Path to your app's source code
+          output_location: "build" # Path to the build output folder
