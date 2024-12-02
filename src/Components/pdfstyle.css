@@ -1,0 +1,118 @@
+	 .pdf_styles .page1 td
+	 {
+	 	text-align: left;
+	 }
+	 .pdf_styles th
+	 {
+	 	font-size: 11px;
+	 	font-family: Arial;
+	 	font-weight:500;
+	 	text-align: left;
+	 }
+	 .pdf_styles td
+	 {
+	 	font-size: 11px;
+	 	font-family: Arial;
+	 	text-align: center;
+	 }
+	 .pdf_styles .fa-close
+	 {
+	 	color: red;
+	 }
+	 .pdf_styles .fa-check
+	 {
+	 	color: green;
+	 }
+	 .pdf_styles .btn
+	 {
+	 	padding:10px 25px;
+	 	background: #4bacc6;
+	 	border-radius:5px; 
+	 	width: 100px;
+	 	display: block;
+	 	margin: 0px auto;
+	 	color: #FFFFFF;
+	 	font-size: 15px;
+	 	font-weight: bold;
+	 }
+	 .pdf_styles .total_scaled_score
+	 {
+	 	width: 250px;
+	 	margin: 0px auto;
+	 }
+	 .pdf_styles .scaled_score {
+	    background: #e36b76;
+	    color: #FFFFFF;
+	    width: 200px;
+	    float: left;
+	    border-radius: 5px 0px 0px 5px;
+	    font-size: 12px;
+	    font-weight: bold;
+	    vertical-align: middle;
+	    justify-content: center;
+	    padding: 10px 0px;
+	}
+	.pdf_styles .scaled_total
+	{
+		background: #622423;
+	    float: left;
+	    width: 40px;
+	    color: #FFFFFF;
+	    font-size: 14px;
+	    font-weight: bolboldd;
+	    padding: 9px 0px;
+	    vertical-align: middle;
+	    justify-content: center;
+	}
+	.pdf_styles .btn-btnscore {
+	    background: #548dd4;
+	    border: 2px solid #294669;
+	    color: #FFF;
+	    font-size: 12px;
+	    padding: 5px 12px;
+	    font-weight: bold;
+	}
+	.pdf_styles .scaled_text
+	{
+		font-size: 14px;
+	   	font-size: 14px;
+    	font-weight: bold;
+    	text-align: right;
+    	padding-right: 5px;
+	}
+	.pdf_styles .page1
+	{
+		page-break-after:always;
+	}
+	.pdf_styles .page1 li
+	{
+		padding: 0px;
+		padding-bottom: 10px;
+		font-size: 14px;
+		line-height: 28px;
+		margin: 0px;
+		text-align: justify;
+	}
+	.pdf_styles .border
+	{
+		border: 2px dashed #000;
+		width: 100px;
+		display: block;
+		padding: 5px;
+		background: #d8d8d8;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.pdf_styles .skill_tracker
+	{
+		background-color: #3f3151;
+		padding: 10px 0px;
+		font-size:25px;
+		width: 400px;
+		margin:0px auto 30px;
+		color: #FFF;
+	}
+	.pdf_styles .page2
+	{
+		page-break-after:always;
+	}

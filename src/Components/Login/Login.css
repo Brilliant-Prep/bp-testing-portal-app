@@ -1,0 +1,318 @@
+.loginBox {
+  width:  350px;
+  margin: 60px auto 0px;
+  min-height:  200px;
+  background:  #fff;
+  border-radius:  5px;
+  padding:  10px 40px;
+  box-sizing:  border-box;
+  box-shadow: 0 5px 5px rgba(0,0,0,.4);
+  font-size: 12px;
+}
+.loginBox .create_account
+{
+  color:#007aff;
+  font-size: 12px;
+}
+.loginBox .text-center
+{
+  text-align: center;
+  padding-top: 10px !important;
+}
+.loginBox .icon {
+  text-align: center;
+  border: 1px solid #CCC;
+  box-shadow: 0 5px 5px rgba(0,0,0,.4);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0px auto 20px;
+}
+.loginBox .user {
+  margin: 15px auto 20px;
+  display: block;
+  margin-bottom: 20px;
+  width:50px;
+}
+.loginBox h3 {
+  margin: 0 !important;
+  padding: 0 0 20px !important;
+  color: #000 !important;
+  text-align: center !important;
+  font-weight: normal bold !important;
+  font-size: 37px !important;
+  text-decoration: none !important;
+}
+.loginBox input {
+  width:  100%;
+  margin-bottom:  20px;
+}
+.loginBox input[type="email"],  .loginBox input[type="password"] {
+  border:  1px solid #aaa;
+  border-radius: 0px;
+  outline:  none;
+  height:  40px;
+  color:  #000;
+  background:  transparent;
+  margin-top: 0px;
+  font-size:  12px;
+  padding-left:  10px;
+  box-sizing:  border-box;
+}
+.loginBox a.signup {
+  color: #ee0763 !important;
+  text-decoration: underline !important;
+  font-weight: normal !important;
+}
+.loginBox input[type="text"]:focus,  .loginBox input[type="password"]:focus {
+  border-bottom:  2px solid #42F3FA;
+}
+.loginBox .inputBox {
+  position: relative;
+  padding-bottom: 10px;
+}
+.loginBox .inputBox span {
+  position:  absolute;
+  top:  10px;
+  color:  #262626;
+}
+.loginBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ee0763;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0px auto 5px;
+  text-transform: none;
+}
+.loginBox .back
+{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+.loginBox .login-btn
+{
+  text-align: center;
+}
+.loginBox a {
+  color:  #007aff;
+  font-size:  12px;
+  font-weight:  bold;
+  text-decoration:  underline;
+  text-align:  center;
+}
+.loginBox a:hover {
+  color:  #ff5f9f;
+}
+.loginBox p {
+  color: #111;
+  font-size: 13px;
+  text-align: center;
+}
+.passage_test
+{
+  text-align: justify;
+}
+.passage_test ul
+{
+  list-style-type: disc;
+  margin: 0px;
+  padding: 20px;
+}
+/* SignIn.css */
+.signin-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.signin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  max-width: 80%;
+  height: auto;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f6f8ff;
+}
+/* Other styles remain the same */
+.login-container {
+  display: flex;
+  width: 70%;
+  margin:0px auto;
+}
+
+.login-container > div {
+  width: 50%;
+}
+
+.image-div { 
+  background: #F6F8FF;
+  height: 100vh; /* Adjust height as needed */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.form-div {
+  padding: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.form-container {
+  width: 500px; 
+  padding: 40px;
+  gap: 30px;
+  border-radius: 26px;
+  border: 1px 0px 0px 0px;
+  border:1px solid #CCC;
+  background:white;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.form-header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 67.6px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.signup-link {
+  color: #ee0763;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.signup-link span{
+  
+  color: #000000;
+}
+
+.inputBox input[type="email"],
+.inputBox input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #d1d1d1;
+  border-radius: 16px;
+  font-size: 16px;
+  background-color: #f3f6ff;
+}
+input[type="email"],
+input[type="password"] {
+  background-color: white; /* Set your desired background color */
+  color: black; /* Set your desired text color */
+}
+
+/* Chrome, Safari, Edge */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: black;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox */
+input:-moz-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  color: black;
+}
+
+/* Ensure it applies only to autofilled fields */
+input:-webkit-autofill:focus,
+input:-moz-autofill:focus {
+  color: black;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.forgotpassword
+{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-btn input[type="submit"] {
+  width: 100%;
+  background: #ee0763;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn input[type="submit"]:hover {
+  background-color: #e6397f;
+}
+
+.forgot-link {
+  color: #000;
+  font-size: 14px;
+  text-decoration: underline !important;
+}
+.forgot-link :hover
+{
+  text-decoration: none;
+}
