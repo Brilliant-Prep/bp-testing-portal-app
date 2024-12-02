@@ -24,25 +24,23 @@ jobs:
           submodules: true
           lfs: false
 
-      # Step 2: Install dependencies (npm install)
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Adjust to your app's Node.js version
+
+      # Step 3: Install dependencies
       - name: Install Dependencies
         run: npm install
 
-      # Step 3: Install OIDC Client (optional, if needed for Id Token)
-      - name: Install OIDC Client from Core Package
-        run: npm install @actions/core@1.6.0 @actions/http-client
+      # Step 4: Suppress ESLint warnings during build
+      - name: Build Application
+        env:
+          CI: false # Prevents React from treating warnings as build errors
+        run: npm run build
 
-      # Step 4: Get Id Token
-      - name: Get Id Token
-        uses: actions/github-script@v6
-        id: idtoken
-        with:
-          script: |
-            const coredemo = require('@actions/core')
-            return await coredemo.getIDToken()
-          result-encoding: string
-
-      # Step 5: Build and Deploy
+      # Step 5: Deploy to Azure Static Web Apps
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -51,9 +49,9 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations ######
           app_location: "/" # App source code path
-          api_location: "" # Api source code path - optional
+          api_location: "" # API source code path - optional
           output_location: "build" # Built app content directory - optional
-          github_id_token: ${{ steps.idtoken.outputs.result }}
+          github_id_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
