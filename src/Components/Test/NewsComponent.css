@@ -1,0 +1,35 @@
+
+  .pdf-page {
+    break-before: always;
+    margin: 0;
+    width: 736px; 
+    min-height: 1160px;
+    position: relative;
+    page-break-before: always;
+  }
+  .pdf-page .satmods .rounds .bar-container
+  {
+    margin-bottom: 33px;
+  }
+  .header,
+  .footer {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: #fff; /* Adjust background color as needed */
+    text-align: center;
+  }
+  .pdf-page .logo {
+    height: 70px;
+    text-align: left;
+  }
+  .header {
+    top: 0;
+    height: auto !important;
+    justify-content:flex-start;
+  }
+  
+  .footer {
+    bottom: 0;
+  }
+  

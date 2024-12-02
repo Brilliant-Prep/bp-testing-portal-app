@@ -1,0 +1,130 @@
+/* App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    height: 70px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 0px;
+    border: 0px solid #ccc; /* Optional: Add borders to separate columns */
+    margin: 0px;
+  }
+  .column:first-child
+  {
+    padding:0px 20px 0px 0px;
+  }
+  .column:last-child
+  {
+    padding:0px 0px 0px 20px;
+  }
+  .column1_max
+  {
+    float: right;
+    text-align: right;
+    width: 100%;
+  }
+  .back_button
+  {
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 5px 20px;
+    background-color: #0f1efd;
+    border: 0px;
+  }
+  .next_button
+  {
+    margin-right: 0px;
+    border-radius: 50px !important;
+    padding: 5px 20px;
+    background-color: #0f1efd;
+    border: 0px;
+  }
+  .footer_first
+  {
+    text-align: left;
+  }
+  .footer_last
+  {
+    float: right;
+    text-align: right;
+  }
+  .custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #aaa;
+    padding: 15px 10px;
+    transition: border-color 0.3s, background-color 0.3s;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .custom-radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  /*.custom-radio .radio-letter {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+  }*/
+
+  .custom-radio.selected
+  {
+    border-color: #007bff;
+  }
+  
+  
+  .custom-radio input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .custom-radio input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .custom-radio input[type="radio"]:checked + label::before {
+    background-color: #007bff; /* Change the background color on radio selection */
+    border-color: #007bff; /* Change the border color on radio selection */
+  }
+  
+  .custom-radio:hover {
+    border-color: #007bff; /* Change the border color on div hover */
+  }
+  
